@@ -7,17 +7,9 @@ int main()
 	int h, m, s;
 	cin >> h >> m >> s;
 
-    if(s == 59)
-    {
-        s = 0;
-        if(m == 59)
-        {
-            m = 0;
-            if(h < 23) h++;
-            else h = 0;
-        }
-        else m++;
-    }
-        else s++;
+    // si anterior = 0, se incrementa el siguiene (sin salirse del resto)
+    s = (s + 1) % 60;
+    m = (m + (s == 0)) % 60;
+    h = (h + (m == 0 && s == 0)) % 24;
     cout << ((h < 10) ? "0" : "") << h << ":" << ((m < 10) ? "0" : "") << m << ":" << ((s < 10) ? "0" : "") << s << endl;
 }
