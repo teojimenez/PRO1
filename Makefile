@@ -1,4 +1,3 @@
-# Define el objetivo por defecto
 all: clean
 
 clean:
