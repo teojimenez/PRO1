@@ -2,7 +2,13 @@
     "files.associations": {
         "ostream": "cpp",
         "iostream": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "*.tcc": "cpp",
+        "random": "cpp",
+        "type_traits": "cpp",
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp"
     },
     "C_Cpp.default.compilerPath": "/usr/bin/g++"
 }

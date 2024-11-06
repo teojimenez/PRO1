@@ -1,8 +1,8 @@
 // First n strange numbers
 
-// 
-// input:
-// output:
+// Hacer un programa que devuelva los primeros n números “raros”
+// input: positivo n > 0
+// output: Imprime la lista de los primeros n números “raros”.
 
 #include <iostream>
 using namespace std;
@@ -10,12 +10,12 @@ using namespace std;
 int main()
 {
     //contador = contador de numeros extranos
-    //currentNumber = numeor actual que miramos si es extrano
-    int n, copia_n, currentNumber = 0, contador = 0; //numero n y copia del numero n
+    //currentNumber = numero actual que miramos si es extrano
+    int n, copia_n, currentNumber = 1, contador = 0; //numero n y copia del numero n
     cin >> n;
 
     //recorremos un contador hasta encontrar todos los numeros extranos
-    while (contador <= n)
+    while (contador < n)
     {
         //uso una copia para no perder el valor de n en ningun paso.
         copia_n = currentNumber;

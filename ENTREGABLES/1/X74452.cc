@@ -38,5 +38,4 @@ int main()
     // imprimimos el resultado segun la condicion
     if (n == resultado) cout << "strange number: " << n << endl;
     else cout << "not strange number: " << n << endl;
-    
 }
