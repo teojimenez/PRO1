@@ -14,9 +14,9 @@ int nombre_digits(int n)
     return 1 + nombre_digits(n / 10);
 }
 
-// int main()
-// {
-//     int n;
-//     cin >> n;
-//     cout << number_of_digits(n) << endl;
-// }
+int main()
+{
+    int n;
+    cin >> n;
+    cout << nombre_digits(n) << endl;
+}
