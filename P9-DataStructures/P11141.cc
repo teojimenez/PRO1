@@ -69,7 +69,6 @@ void informacio(const vector<Estudiant>& es, double& min, double& max, double& m
 //     est5.nota = 6;
 //     est5.repetidor = true;
 
-
 //     es.push_back(est1);
 //     es.push_back(est2);
 //     es.push_back(est3);

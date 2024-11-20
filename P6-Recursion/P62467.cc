@@ -7,9 +7,19 @@
 #include <iostream>
 using namespace std;
 
-void asteriscs(int &n)
+int my_pow(int elevado, int n)
 {
-    if (n > 0)
+    int result;
+    if (elevado < 2) result = 0;
+    else result = (n * elevado) + my_pow(elevado - 1, n);
+
+    return result;
+}
+
+void asteriscs(int n)
+{
+    // int pow = my_pow(n, 2);
+    if (n > n/2)
     {
         cout << '*' << endl;
         --n;
@@ -22,5 +32,5 @@ int main()
     int n;
 
     cin >> n;
-    asteriscs(n);
+    cout << my_pow(n, 2) << endl;
 }
