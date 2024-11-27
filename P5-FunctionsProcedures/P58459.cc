@@ -11,7 +11,7 @@ bool es_any_de_traspas(int any)
 {
     if (any % 4 == 0)
     {
-        if (any % 100 != 0 || any % 400 == 0) return true;
+        if (any % 100 != 0 or any % 400 == 0) return true;
     }
     return false;
 }
@@ -33,7 +33,7 @@ bool es_data_valida(int d, int m, int a)
         if (d <= 30) return true;
     }
     //sino mesos de 31 dies
-    if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12)
+    if (m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12)
     {
         if (d <= 31) return true;
     }

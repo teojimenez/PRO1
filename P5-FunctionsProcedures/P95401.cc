@@ -11,7 +11,7 @@ bool es_any_de_traspas(int any)
 {
     if (any % 4 == 0)
     {
-        if (any % 100 != 0 || any % 400 == 0) return true;
+        if (any % 100 != 0 or any % 400 == 0) return true;
     }
     return false;
 }

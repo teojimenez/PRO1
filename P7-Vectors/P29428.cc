@@ -8,26 +8,29 @@
 #include <vector>
 using namespace std;
 
-bool conte(string s1, string s2)
-{
-    int i = -1, j = 0;
-    bool trobat = false;
+bool conte(string s1, string s2) {
+    bool hies = false;
+    int i = 0;
 
-    while (++i < s1.length() && not trobat)
-    {
-        if (s1[i] == s2[j])
-        {
-            while (s1[i] == s2[j] and i < s1.length() and j < s2.length())
-            {
-                i++;
-                j++;
-            }
-            if (j == s2.size()) trobat = true;
-            else j = 0;
+    while (i <= s1.length() - s2.length() && !hies) {
+        int cont = 0, j = 0;
+
+        while (j < s2.length() && s1[i + j] == s2[j]) {
+            ++cont;
+            ++j;
+        }
+
+        if (cont == s2.length()) {
+            hies = true;
+        } else {
+            ++i;
         }
     }
-    return trobat;
+
+
+    return hies;
 }
+
 
 int main()
 {
@@ -43,12 +46,9 @@ int main()
         int j = -1;
         while (++j < n)
         {
-            if (vec[i].size() >= vec[j].size() && conte(vec[i], vec[j]))
+            if (vec[i].size() >= vec[j].size() and conte(vec[i], vec[j]))
                 cout << ' ' << vec[j];
         }
         cout << endl;
-        
     }
-    
-    
 }

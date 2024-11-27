@@ -12,7 +12,7 @@ int main()
     string str;
     
     int count = 0,countingBool = false;
-    while (cin >> str && str != "end")
+    while (cin >> str and str != "end")
     {
         if (countingBool) ++count;
         else if (str == "beginning") countingBool = true;

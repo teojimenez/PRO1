@@ -15,7 +15,7 @@ int main()
         cout << "it's cold" << endl;
         if (temperature <= 0) cout << "water would freeze" << endl;
     }
-    else if (temperature < 31 && temperature > 9) cout << "it's ok" << endl;
+    else if (temperature < 31 and temperature > 9) cout << "it's ok" << endl;
     else
     {
         cout << "it's hot" << endl;

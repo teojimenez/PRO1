@@ -18,7 +18,7 @@ char lletra_mes_frequent(const string& s) {
         for (int j = 0; j < s.length(); j++)
             if (s[i] == s[j]) count++;
 
-        if (frequencia < count || (frequencia == count && letra > s[i])) {
+        if (frequencia < count or (frequencia == count and letra > s[i])) {
             letra = s[i];
             frequencia = count;
         }

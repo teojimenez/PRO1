@@ -16,7 +16,7 @@ int main()
        c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u') letterType = "vowel";
     else letterType = "consonant";
 
-    if (c >= 'a' && c <= 'z') caseType = "lowercase";
+    if (c >= 'a' and c <= 'z') caseType = "lowercase";
     else caseType = "uppercase";
     // printing the results
     cout << caseType << endl << letterType << endl;

@@ -28,7 +28,7 @@ int main()
 
         while (div >= 1)
         {
-            if (n % div == 0 && div != n / div)
+            if (n % div == 0 and div != n / div)
                 cout << ' ' << n / div;
             --div;
         }

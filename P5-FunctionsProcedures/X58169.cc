@@ -35,7 +35,7 @@ int main() {
     bool found = false;
 
     cin >> seq;
-    while (!found && seq != 0) {
+    while (!found and seq != 0) {
         if (seq == max1) {
             found = true;
             lpos2 = pos;

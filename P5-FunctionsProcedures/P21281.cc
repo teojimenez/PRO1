@@ -20,7 +20,7 @@ void factor(int n, int& f, int& q)
             n /= factor;
         }
 
-        if (count > q || (count == q && factor < f))
+        if (count > q or (count == q and factor < f))
         {
             q = count;
             f = factor;
@@ -29,7 +29,7 @@ void factor(int n, int& f, int& q)
         ++factor;
     }
     //cas num factor si mismo
-    if (n > 1 && (1 > q || n < f)) 
+    if (n > 1 and (1 > q or n < f)) 
     {
         f = n;
         q = 1;

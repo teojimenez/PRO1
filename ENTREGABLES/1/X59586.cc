@@ -27,28 +27,28 @@ int main()
     //si hay 2 puntuaciones iguales,
     // sumamos o restamos un valor a la media segun
     // el valor de la puntuacion diferente
-    if (p1 == p2 && p3 != p1)
+    if (p1 == p2 and p3 != p1)
     {
         if(p3 < p1) ++media;
         else --media;
     }
-    else if (p1 == p3 && p2 != p1)
+    else if (p1 == p3 and p2 != p1)
     {
         if(p2 < p1) ++media;
         else --media;
     }
-    else if (p2 == p3 && p2 != p1)
+    else if (p2 == p3 and p2 != p1)
     {
         if(p1 < p2) ++media;
         else --media;
     }
     // seleccion de medallas segun la media
     if (media < 5) cout << "Cap premi" << endl;
-    else if (media >= 5 && media < 7) cout << "Medalla bronze" << endl;
-    else if (media >= 7 && media < 9) cout << "Medalla plata" << endl;
+    else if (media >= 5 and media < 7) cout << "Medalla bronze" << endl;
+    else if (media >= 7 and media < 9) cout << "Medalla plata" << endl;
     else cout << "Medalla or" << endl;
 
     cout << media << endl;
     // si todos los valores son iguales -> premi a la unanimitat
-    if (p1 == p2 && p2 == p3 && media >= 5) cout << "Premi a la unanimitat" << endl;
+    if (p1 == p2 and p2 == p3 and media >= 5) cout << "Premi a la unanimitat" << endl;
 }

@@ -15,8 +15,8 @@ int main()
 	cin >> jugador1 >> jugador2;
 
     if (jugador1 == jugador2) cout << '-' << endl;
-    else if ((jugador1 == 'A' && jugador2 == 'P') ||
-             (jugador1 == 'P' && jugador2 == 'V') ||
-             (jugador1 == 'V' && jugador2 == 'A')) cout << '1' << endl;
+    else if ((jugador1 == 'A' and jugador2 == 'P') or
+             (jugador1 == 'P' and jugador2 == 'V') or
+             (jugador1 == 'V' and jugador2 == 'A')) cout << '1' << endl;
     else cout << '2' << endl;
 }

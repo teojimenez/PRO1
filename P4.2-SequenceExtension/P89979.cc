@@ -13,7 +13,7 @@ int main()
 
     int lineaOrder = 0;
     int count = 0;
-    while (cin >> nPalabras && lineaOrder == 0)
+    while (cin >> nPalabras and lineaOrder == 0)
     {
         count++;
         string anterior, actual;
@@ -23,7 +23,7 @@ int main()
         bool bien = true;
         int j = 0;
 
-        while (j < nPalabras - 1 && bien)
+        while (j < nPalabras - 1 and bien)
         {
             cin >> actual;
             if (anterior > actual)

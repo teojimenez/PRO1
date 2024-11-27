@@ -21,9 +21,9 @@ int main()
     int y = min(b1, b2);
 
     // positions
-    if (a1 == a2 && b1 == b2) cout << "=";
-    else if (a1 >= a2 && b1 <= b2) cout << "1";
-    else if (a2 >= a1 && b2 <= b1) cout << "2";
+    if (a1 == a2 and b1 == b2) cout << "=";
+    else if (a1 >= a2 and b1 <= b2) cout << "1";
+    else if (a2 >= a1 and b2 <= b1) cout << "2";
     else cout << "?";
 
     cout << " , ";

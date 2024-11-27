@@ -24,7 +24,7 @@ void incrementa(Rellotge& r)
 {
     r.s = (r.s + 1) % 60;
     r.m = (r.m + (r.s == 0)) % 60;
-    r.h = (r.h + (r.m == 0 && r.s == 0)) % 24;
+    r.h = (r.h + (r.m == 0 and r.s == 0)) % 24;
 }
 void escriu(const Rellotge& r)
 {

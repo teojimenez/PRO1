@@ -21,7 +21,7 @@ bool is_perfect(int n)
         }
     }
 
-    return (divisor == n && divisor != 1);
+    return (divisor == n and divisor != 1);
 }
 
 int main()
