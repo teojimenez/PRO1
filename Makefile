@@ -14,6 +14,7 @@ git:
 	@git add .
 	@git commit -m $(MESSAGE)
 	@git push
+	@clear
 	@echo "\033[0;32mCodigo subido a GitHub!\033[0m"
 
 .PHONY: clean git

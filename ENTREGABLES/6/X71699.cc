@@ -33,30 +33,46 @@ int main()
     {
         int i = -1;
         bool estocastica = true;
-        vector <int> columnas(n); //vector on es guarda la suma de les columnes
+        vector <int> columnas(n, 0);        //vector on es guarda la suma de les columnes
 
-        while (++i < n and estocastica)
+        while (estocastica and ++i < n)
         {
-            int count_fila = 0; //contador dels numeros de les files
-            int actual_n; // numero natural de posicio
-            for (int j = 0; j < n; j++)
+            int count_fila = 0;  //contador dels numeros de les files
+            int actual_n;        // numero natural de posicio
+            int j = -1;
+
+            while (estocastica and ++j < n)
             {
                 cin >> actual_n;
-                count_fila += actual_n; //sumem total de la fila
-                columnas[j] += actual_n; //sumem a la posicio de la columna adient
+                //sumem total de la fila
+                count_fila += actual_n;
+                 //sumem a la posicio de la columna adient
+                columnas[j] += actual_n;
+
+                // si ja es mes gran que 10, no sera estocaustica
+                if (count_fila > 10)
+                {
+                    estocastica = false;
+                    // s´ha de buidar el buffer d'quella linea
+                    while (++j < n)
+                    {
+                        cin >> actual_n;
+                    }
+                }
             }
-            //verifica si la fila es estocastica
+
+            //verifica si la fila total es estocastica
             if (count_fila != 10) estocastica = false;
         }
 
-        // si no es estocaustica i no s'han iterat totes les columnes
+        // si no s'han iterat totes les columnes (no es estocaustica)
         // s'ha de buidar el buffer
-        while (i < n)
+        while (++i < n)
         {
             int actual_n;
             for (int j = 0; j < n; j++) cin >> actual_n;
-            i++;
         }
+
         //verificacio si es estocastica per files i si les columnes tambe ho son
         if (estocastica and check_columnas(columnas)) cout << "true" << endl;
         else cout << "false" << endl;
