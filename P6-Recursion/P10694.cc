@@ -15,10 +15,12 @@ void asteriscs(int n)
     {
         asteriscs(n - 1);
 
+        asteriscs(n - 1);
+
         for (int i = 0; i < n; i++) cout << "*";
+
         cout << endl;
 
-        asteriscs(n - 1);
     }
 }
 
